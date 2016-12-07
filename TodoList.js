@@ -7,7 +7,7 @@ class TodoList extends React.Component {
         <li>
           <TodoItem
             title="Item 1"
-            completed={false}
+            completed={true}
           />
         </li>
         <li>
