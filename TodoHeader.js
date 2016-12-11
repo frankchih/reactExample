@@ -1,3 +1,4 @@
+
 class TodoHeader extends React.Component {
   render() {
     const {
@@ -12,6 +13,18 @@ class TodoHeader extends React.Component {
       </div>
     );
   }
+}
+
+TodoHeader.propTypes = {
+  title: React.PropTypes.string, 
+  username: React.PropTypes.string, 
+  todoCount: React.PropTypes.number,
+}
+
+TodoHeader.defaultProps = {
+  title: '我的代辦事項', 
+  username: 'Guest', 
+  todoCount: '0',
 }
 
 window.App.TodoHeader = TodoHeader;
